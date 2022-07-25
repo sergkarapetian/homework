@@ -2,9 +2,10 @@
 // to Array.prototype.push
 
 Array.prototype.myPush = function (...el) {
-    let newArr = [...this, ...el];
-    this = newArr;
-    return this;
+    for (let elements of el) {
+        this[this.length] = elements
+    }
+    return this.length;
 }
 
 let array = [1, 2, 3, 4]
