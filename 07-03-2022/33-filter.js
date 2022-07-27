@@ -1,22 +1,22 @@
 // Create a custom Array.prototype.myFilter should 
 // work similarly to Array.prototype.filter
 
-Array.prototype.myReduce = function (callBack, initialValue) {
-    const arr = this;
-    let accumulator = initialValue || arr[0];
-    let startFromINdex = initialValue ? 0 : 1;
-
-    for (let i = startFromINdex; i < arr.length; i++) {
-        const item = arr[i];
-        accumulator = callBack(accumulator, item);
+Array.prototype.myFilter = function (callBack) {
+    let newArr = [];
+    for (let i = 0; i < this.length; i++) {
+        if ()
     }
+}
 
-    return accumulator;
-};
 
-const sum = ["a", "b", "c", "d", "e"].myReduce(function (acm, item) {
-    return acm + item;
-});
+let arr = [1, 2, 3, 4, 5]
+let result = arr.filter(function (item, index) {
+    console.log(arr.length)
+    return item % 2 === 0
+})
+console.log(result);
 
-console.log(sum);
 
+(item) === (x, x, this.x)
+    (item, 1)
+    (item, 1, b)
