@@ -1,0 +1,11 @@
+.button {
+  height: 32px;
+  width: 75px;
+  margin: 10% 47%;
+}
+
+#table {
+  height: 40px;
+  width: 100%;
+  display: none;
+}

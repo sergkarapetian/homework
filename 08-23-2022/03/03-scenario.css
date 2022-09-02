@@ -1,0 +1,24 @@
+.button {
+  height: 32px;
+  width: 75px;
+  margin: 10% 47%;
+}
+
+#table {
+  height: 40px;
+  width: 100%;
+  display: none;
+}
+
+#num{
+  width: 60px;
+  margin-left: 44%;
+}
+
+.remove{
+  height: 10px;
+  line-height: 2px;
+  display: block;
+  margin-top: 5px;
+  margin-right: -18px;
+}
