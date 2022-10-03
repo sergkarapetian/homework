@@ -1,0 +1,64 @@
+body {
+  background-color: #3f1a49;
+}
+
+.counterDiv {
+  width: 100vw;
+  height: 90vh;
+  gap: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+  height: 15%;
+  color: white;
+  background-image: url(./components/Img/3.png);
+  flex-direction: column;
+}
+
+.subBtn {
+  width: 50%;
+  cursor: pointer;
+}
+.addBtn {
+  width: 50%;
+  cursor: pointer;
+}
+.resetBtn {
+  width: 100%;
+  cursor: pointer;
+}
+
+.inputDiv {
+  width: 100vw;
+  height: 10vh;
+  gap: 120px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.maxValue {
+  margin-top: 60vh;
+}
+.minValue {
+  margin-top: 60vh;
+}
+
+.stepValue {
+  margin-top: 60vh;
+}
+
+.btn {
+  margin-top: 74vh;
+  position: absolute;
+  cursor: pointer;
+}
+
