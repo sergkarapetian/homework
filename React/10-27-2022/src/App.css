@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+}
+
+.mainDiv {
+  width: 100vw;
+  height: 95.5vh;
+  position: relative;
+  margin: 0 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  overflow-x: hidden;
+}
+
+.list {
+  max-width: 100vw;
+  max-height: 100vh;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 24px 5px;
+}
+
+/* .btn {
+  position: absolute;
+  right: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+} */
+
+.editor {
+  width: 100px;
+  height: 50px;
+  display: flex;
+}
+
+.observer {
+  display: none;
+}

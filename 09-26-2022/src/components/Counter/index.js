@@ -14,6 +14,12 @@ componentDidMount(){
   }
 }
 
+componentDidUpdate(prevProps){
+  if(prevProps.minValue !== this.props.minValue ){
+    this.setState({count: this.props.minValue})
+  }
+}
+
   hendleAdd = () => {
     if (this.state.count + this.props.stepValue <= this.props.maxValue) {
       this.setState({ count: this.state.count + (this.props.stepValue || 1) });
@@ -36,19 +42,6 @@ componentDidMount(){
   handleResetCount = () => {
     this.setState({ count: this.props.minValue || 0 });
   };
-
-  handleCount = () => {
-    this.setState({count: this.props.minValue || 0})
-  }
-
-  // static getDerivedStateFromProps(nextState, prevState){
-  //   console.log(prevState);
-  //   if(nextState !== prevState){
-  //     return {count: nextState.minValue}
-  //   } else {
-  //     return null
-  //   }
-  // }
   
   render() {
     const {
