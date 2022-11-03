@@ -1,0 +1,24 @@
+.input {
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.add {
+  border-radius: 400px;
+  border: 1px solid grey;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.edit{
+  width: 2vw;
+  height: 2vh;
+}
+
+.delete{
+  width: 2vw;
+  height: 2vh;
+}
