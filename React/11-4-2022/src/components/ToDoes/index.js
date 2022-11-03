@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import editBtn from "../../icons/editBtn.svg";
-import deleteBtn from "../../icons/deleteBtn.svg";
+import editBtn from "../../assets/editBtn.svg";
+import deleteBtn from "../../assets/deleteBtn.svg";
 
 export default function Todoes({ title, id, isDone, handleDelete, handleEditTodo }) {
   const [isEditMode, setIsEditMode] = useState(false);
