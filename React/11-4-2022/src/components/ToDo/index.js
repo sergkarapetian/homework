@@ -22,13 +22,28 @@ export default function Todo() {
   };
 
   const handleEditTodo = (id, newTitle) => {
-    setTodoList(prev => prev.map(item=>{
-        if(item.id === id){
-            item.title = newTitle
+    setTodoList((prev) =>
+      prev.map((item) => {
+        if (item.id === id) {
+          item.title = newTitle;
+        }
+        return item;
+      })
+    );
+  };
+
+  const complateTodo = (id) => {
+    setTodoList((prev) =>
+      prev.map((item) => {
+        if (item.id === id) {
+          item.isDone = !item.isDone;
         }
         return item
-    }))
+      })
+    );
+    // console.log(todoList.isDone);
   };
+
   return (
     <div>
       <div className="todo">
@@ -44,7 +59,13 @@ export default function Todo() {
 
       <div className="todoList">
         {todoList.map((item) => (
-          <Todoes key={item.id} {...item} handleDelete={handleDeleteTodo} handleEditTodo = {handleEditTodo} />
+          <Todoes
+            key={item.id}
+            {...item}
+            handleDelete={handleDeleteTodo}
+            handleEditTodo={handleEditTodo}
+            complateTodo = {complateTodo}
+          />
         ))}
       </div>
     </div>

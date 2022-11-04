@@ -22,3 +22,7 @@
   width: 2vw;
   height: 2vh;
 }
+
+.done{
+  text-decoration: line-through;
+}
