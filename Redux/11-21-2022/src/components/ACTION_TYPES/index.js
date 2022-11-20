@@ -1,0 +1,10 @@
+const ACTION_TYPES = {
+  ADD_TODO: "ADD_TODO",
+  EDIT_TODO: "EDIT_TODO",
+  REMOVE_TODO: "REMOVE_TODO",
+  SAVE: "SAVE",
+  RESET: "RESET",
+  DONE: "DONE"
+};
+
+export default ACTION_TYPES;

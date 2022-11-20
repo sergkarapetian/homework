@@ -1,0 +1,36 @@
+.AppInput {
+  height: 3.7vh;
+  width: 24.7vw;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.container {
+  display: flex;
+}
+
+.TodoList {
+  display: flex;
+  height: 4vh;
+  width: 25vw;
+  border-radius: 5px;
+  border: 1px solid grey;
+  justify-content: center;
+}
+
+.DoneTodo {
+  display: flex;
+  height: 4vh;
+  width: 25vw;
+  border-radius: 5px;
+  border: 1px solid grey;
+  justify-content: center;
+  text-decoration: line-through;
+}
+
+.editInput {
+  height: 3.6vh;
+  width: 24.7vw;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
